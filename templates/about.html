@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Opportunity Track{% endblock %}
+
+{% block content %}
+<!-- Banner Section -->
+<div class="banner">
+    <img src="{{ url_for('static', filename='banner3.jpg') }}" alt="Banner Image">
+</div>
+
+<!-- Updated Section: About the Website -->
+<section class="website-info">
+    <h3 style="color: #007bff">About This Website</h3>
+    <p>Opportunity Track is a platform dedicated to offering internship opportunities to students in various fields such as software development, design, marketing, and more. This website provides easy access to valuable resources, job postings, and internships to help students build their careers. We believe in bridging the gap between students and top-tier companies.</p>
+    <p>The goal is to inspire others to explore their interests in technology, development, design, and other industries while providing useful tools and information to help them succeed.</p>
+</section>
+
+<br>
+<!-- Updated Section: Internship Opportunities -->
+<section class="internship-opportunities">
+    <h3 style="color: #007bff">Internship Opportunities</h3>
+    <p>Our platform offers a wide range of internship opportunities tailored for students who are looking to gain real-world experience in various fields. Whether you are interested in web development, mobile app development, data science, or marketing, we have opportunities for you. These internships provide hands-on learning, mentorship, and exposure to the industry, which will help you grow and enhance your skills.</p>
+    <p>To explore the current available internships, check out the internship listings on the homepage.</p>
+</section>
+<br>
+
+<!-- Profile Section -->
+<div class="profile">
+    <h2 style="color: #007bff">Developed by Vishal Kumar</h2>
+    <p>Coding & Development | Design & Inspiration</p>
+</div>
+
+<section class="bio">
+    <h3 style="color: #007bff">About Me</h3>
+    <p>I'm Vishal from India, and I do content on Design and Development. I really enjoy learning languages and frameworks like React and Flutter.</p>
+</section>
+
+<br>
+<section class="skills">
+    <h3 style="color: #007bff">Skills and Experience</h3>
+    <ul>
+        <li>React MERN Stack</li>
+        <li>Flutter</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>CI/CD, GitHub Actions</li>
+    </ul>
+</section>
+
+<br>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h3 style="color: #007bff">Contact</h3>
+    <p><strong>Location:</strong> India</p>
+    <p><strong>Email:</strong> <a href="mailto:git.alien@proton.me">git.alien@proton.me</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishal-kumar12432/" target="_blank">Profile</a></p>
+    <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@git_alien" target="_blank">Channel</a></p>
+</section>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Internship Details - Opportunity Track{% endblock %}
+
+
+{% block content %}
+<div class="details-page">
+    {% if details.image_url != "Not available" %}
+    <div class="internship-image">
+        <img src="{{ details.image_url }}" alt="Internship Image" class="img-fluid">
+    </div>
+{% else %}
+    <p>No image available.</p>
+{% endif %}
+
+    <h1>{{ details.title }}</h1>
+    <p><strong>Published Date:</strong> {{ details.published_date }}</p>
+    <p><strong>Description:</strong> {{ details.description }}</p>
+
+    <h3>Responsibilities</h3>
+    <ul>
+        {% if details.responsibilities != "Not available" %}
+            {% for item in details.responsibilities %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No responsibilities listed.</li>
+        {% endif %}
+    </ul>
+
+    <h3>Requirements</h3>
+    <ul>
+        {% if details.requirements != "Not available" %}
+            {% for item in details.requirements %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No requirements listed.</li>
+        {% endif %}
+    </ul>
+
+    <h3>Perks</h3>
+    <p>{{ details.perks }}</p>
+
+    <h3>Location</h3>
+    <p>{{ details.location }}</p>
+
+    <a href="{{ details.link }}" target="_blank" class="btn">Apply Now</a>
+    <a href="/" class="btn btn-back">Back to Listings</a>
+</div>
+{% endblock %}

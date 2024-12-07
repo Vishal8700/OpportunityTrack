@@ -1,0 +1,75 @@
+/* indexcss.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* Internship List Styles */
+.internship-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.internship-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Space between items */
+    padding: 20px;
+    flex-basis: calc(33.333% - 20px); /* Default width for three items per row */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover effect */
+}
+
+.internship-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Styles */
+.internship-item h3 a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.internship-item h3 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Meta Info Styles */
+.meta-info {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .internship-item {
+        flex-basis: calc(100% - 20px); /* Full width on medium screens */
+        margin: 10px; /* Margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .internship-item {
+        flex-basis: calc(100% - 20px); /* Full width on small screens */
+        margin: 10px; /* Margin for spacing */
+    }
+}

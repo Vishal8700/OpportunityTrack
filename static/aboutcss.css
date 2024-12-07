@@ -1,0 +1,9 @@
+
+
+@media (max-width: 480px) {
+
+    .banner img {
+        max-height: 100px; /* Further reduce banner height for very small screens */
+    }
+
+}
